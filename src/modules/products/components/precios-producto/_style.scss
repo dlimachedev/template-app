@@ -1,0 +1,51 @@
+.nuevoProducto__divPrecioProducto__divTitulo{
+  padding: 0.1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.25em;
+}
+
+.nuevoProducto__divPrecioProducto__row1{
+  @include row;
+  margin-bottom: 1em;
+
+  &__divBtnAgregarPrecioProducto{
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+
+    .btnAgregarPrecioProducto{
+      font-size: 0.90em;
+      padding:0.7em 1.4em;
+      border: solid 1px $onBackground;
+      border-radius:0.15em;
+      text-decoration:none;
+      text-transform:uppercase;
+      color:$onBackground;
+      background: $background;
+      position:relative;
+
+      &:active{
+        top:0.1em;
+      }
+
+      &:focus{
+        text-decoration:none;
+        border:none;
+      }
+
+      &:hover{
+        border:none;
+        background: $secondary;
+        color:$onSecondary;
+      }
+    }
+  }
+}
+
+.nuevoProducto__divPrecioProducto__row2{
+  padding: 0.1em;
+  width: 64em;
+}

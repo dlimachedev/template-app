@@ -1,0 +1,25 @@
+.nuevoProducto__divProducto__divTitulo{
+  padding: 0.1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.25em;
+}
+
+.nuevoProducto__divProducto__row1{
+  @include row;
+}
+
+.nuevoProducto__divProducto__row2{
+  @include row;
+}
+
+.nuevoProducto__divProducto__row3{
+  @include row;
+}
+
+.nuevoProducto__divProducto__row4{
+  @include row;
+  margin-bottom: 2em;
+}

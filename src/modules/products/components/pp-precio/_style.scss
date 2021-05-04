@@ -1,0 +1,20 @@
+.nuevoProducto__divPrecioProducto__row1__divLblPrecio{
+  margin-right: 0.5em;
+    margin-left: 1em;
+
+    .lblPrecio{
+      font-size: 1em;
+    }
+}
+
+.nuevoProducto__divPrecioProducto__row1__divLTxtPrecio{
+  margin-left: 0.5em;
+    
+    .txtPrecio{
+      @include txt(15em);
+
+      &:focus{
+        @include focusTxt;
+      }
+    }
+}

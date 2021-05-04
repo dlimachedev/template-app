@@ -1,0 +1,19 @@
+.nuevoProducto__divProducto__row1__divLblCodigo{
+  margin-right: 0.5em;
+    
+    .lblCodigo{
+      font-size: 1em; 
+    }
+}
+
+.nuevoProducto__divProducto__row1__divTxtCodigo{
+  margin-left: 0.5em;
+    
+    .txtCodigo{
+      @include txt(15em);
+
+      &:focus{
+        @include focusTxt;
+      }
+    }
+}

@@ -1,0 +1,43 @@
+.nuevoProducto__divPrecioProducto__row1__divLblTipoPrecio{
+  margin-right: 0.5em;
+
+    .lblTipoPrecio{
+      font-size: 1em;
+    }
+}
+
+.nuevoProducto__divPrecioProducto__row1__divCmbTipoPrecio{
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+
+    .cmbTipoPrecio{
+      @include txt(15em);
+      appearance: none;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+      cursor: pointer;
+
+      &:focus{
+        @include focusTxt;
+      }
+    }
+
+    & select::-ms-expand {
+      display: none;
+    }
+
+    .cmbTipoPrecioFlecha{
+      padding-bottom: 0.5em;
+
+      i{  
+        display: block;
+        border-left:4px solid $onBackground;
+        border-bottom:4px solid $onBackground;
+        transform: rotate(-45deg); 
+        transition: all 0.25s ease;
+        width: 1em;
+        height: 1em;
+      }
+    }
+}

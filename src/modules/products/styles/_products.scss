@@ -1,0 +1,52 @@
+@import './mixins';
+
+@import '../views/nuevo-producto/style';
+@import '../components/p-codigo/style';
+@import '../components/p-descripcion/style';
+@import '../components/p-descripcion-corta/style';
+@import '../components/p-unidad-medida/style';
+@import '../components/p-ubicacion/style';
+@import '../components/p-activo/style';
+@import '../components/producto/style';
+@import '../components/pp-tipo-precio/style';
+@import '../components/pp-precio/style';
+@import '../components/precios-producto/style';
+
+@import '../views/productos/style';
+@import '../components/productos-tabla/style';
+
+@import '../views/editar-producto/styles';
+
+.product{
+  display: flex;
+  flex-direction: column;
+
+  .btnGuardarT{
+    font-size: 1em;
+    padding:0.7em 1.4em;
+    border: solid 1px $onBackground;
+    border-radius:0.15em;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:$onBackground;
+    background: $background;
+    position:relative;
+    margin-left: 28em;
+
+    &:active{
+      top:0.1em;
+    }
+
+    &:focus{
+      text-decoration:none;
+      border:none;
+    }
+
+    &:hover{
+      border:none;
+      background: $secondary;
+      color:$onSecondary;
+    }
+  }
+}
+

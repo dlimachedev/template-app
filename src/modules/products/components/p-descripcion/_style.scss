@@ -1,0 +1,19 @@
+.nuevoProducto__divProducto__row2__divLblDescripcion{
+  margin-right: 0.5em;
+
+    .lblDescripcion{
+      font-size: 1em;
+    }
+}
+
+.nuevoProducto__divProducto__row2__divTxtDescripcion{
+  margin-left: 0.5em;
+    
+    .txtDescripcion{
+      @include txt(50em);
+
+      &:focus{
+        @include focusTxt;
+      }
+    }
+}

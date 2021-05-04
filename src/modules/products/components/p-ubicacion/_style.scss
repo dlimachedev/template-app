@@ -1,0 +1,20 @@
+.nuevoProducto__divProducto__row3__divLblUbicacion{
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+
+    .lblUbicacion{
+      font-size: 1em;
+    }
+}
+
+.nuevoProducto__divProducto__row3__divTxtUbicacion{
+  margin-left: 0.5em;
+
+    .txtUbicacion{
+      @include txt(15em);
+
+      &:focus{
+        @include focusTxt;
+      }
+    }
+}
